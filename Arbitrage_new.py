@@ -48,16 +48,10 @@ def findPath(curr, profit, used):
 if __name__ == "__main__":
     findPath("tokenB", delta_x, [])
 
-    amount = 5
-
     print_str = "path: tokenB"
-    prev = "tokenB"
     for node in max_path:
         print_str += "->"
         print_str += str(node)
-        amount = getAmountOut(amount, liquidity[(prev, node)][0], liquidity[(prev, node)][1])
-        print(amount)
-        prev = node 
 
     print_str += ", tokenB balance = "
     print_str += str(max_profit)
