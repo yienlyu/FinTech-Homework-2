@@ -56,7 +56,7 @@ if __name__ == "__main__":
         print_str += "->"
         print_str += str(node)
         amount = getAmountOut(amount, liquidity[(prev, node)][0], liquidity[(prev, node)][1])
-        print(amount)
+        # print(amount)
         prev = node 
 
     print_str += ", tokenB balance = "
